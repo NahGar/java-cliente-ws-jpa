@@ -10,7 +10,10 @@ public class Main {
         CursoServicioWs service = new CursoServiceWsImplService().getCursoServiceWsImplPort();
 
         Curso curso = new Curso();
-        curso.setNombre("angular");
+        curso.setNombre("react");
+        curso.setDescripcion("react js");
+        curso.setInstructor("andrés");
+        curso.setDuracion(50D);
         Curso newCurso = service.guardar(curso);
         System.out.println("NUEVO Curso: " + newCurso.getNombre());
 
